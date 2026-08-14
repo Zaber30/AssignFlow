@@ -88,22 +88,28 @@ SQL Server 2019+
 Git
 
 ## Check installations:
-
+```cpp
 dotnet --version
 node --version
 npm --version
 git --version
+```
 
 ## Clone the Repository
+ ```cpp
    git clone YOUR_GITHUB_REPOSITORY_URL
    cd OnnorokomProjucti
+ ```
 Resotere packages
+```cpp
    dotnet restore
+ ```
 
 ## Setting Database
 create appsettings.json file
-
+```cp 
 cp appsettings.example.json appsettings.json
+```
 ```cp 
  Configure the database connection:
 {
@@ -113,11 +119,12 @@ cp appsettings.example.json appsettings.json
 }
 ```
 Replace:
-
+```cpp
 YOUR_SQL_SERVER → your SQL Server server
 AssignmentDB → database name
 YOUR_SQL_USER → SQL Server username
 YOUR_SQL_PASSWORD → SQL Server password
+```
 
 ## create database 
 Run command
@@ -150,7 +157,7 @@ Open that address in your browser.
 15. Login
 
 Use one of the seeded accounts.
-
+```cpp
 Admin
 Email: admin@example.com
 Password: Admin@123
@@ -160,3 +167,4 @@ Password: Teacher@123
 Student
 Email: student@example.com
 Password: Student@123
+```
