@@ -1,0 +1,43 @@
+services:
+   onnorokomprojucti:
+    build:
+      context: .
+    container_name: onnorokomprojucti
+    volumes:
+      - .:/app/project
+    ports:
+      - "5064:5064"
+    environment:
+      applicationUrl: http://0.0.0.0:5064
+    command: tail -f /dev/null
+    depends_on:
+      - onnorokomprojucti_Mssql_service
+    networks:
+      - framework_networks
+    
+   
+   onnorokomprojucti_Mssql_service:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: onnorokomprojucti_Mssql_service
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Zaber81501*"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - framework_networks
+volumes:
+  mssql_data:
+
+networks:
+  framework_networks:
+    driver: bridge
+    
+      
+      
+    
+    
+   
+  

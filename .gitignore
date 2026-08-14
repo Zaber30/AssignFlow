@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.json    
