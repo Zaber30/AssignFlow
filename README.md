@@ -121,12 +121,14 @@ YOUR_SQL_PASSWORD → SQL Server password
 
 ## create database 
 Run command
+```cpp 
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+```
 ## run the backend
 Navigate to the backend project:
- ```
+ ```cpp
 cd. Backend/OnnorokomProjucti
 dotnet run
 ```
@@ -136,9 +138,9 @@ http://localhost:5064
 
 ## Run the frontend
 run:
-
+```cpp
 npm run dev
-
+```
 Vite should display something similar to:
 
 Local: http://localhost:5173/
