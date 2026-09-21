@@ -22,7 +22,7 @@ namespace OnnorokomProjucti.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Assignment", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Assignment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,7 +71,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("Assignments");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Class", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Class", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -95,7 +95,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("Classes");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.StudentClass", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.StudentClass", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -123,7 +123,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("StudentClasses");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Subject", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Subject", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -148,7 +148,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("Subjects");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Submission", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Submission", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -195,7 +195,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("Submissions");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.TeacherSubject", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.TeacherSubject", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -228,7 +228,7 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("TeacherSubjects");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.User", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -266,21 +266,21 @@ namespace OnnorokomProjucti.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Assignment", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Assignment", b =>
                 {
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Class", "Class")
+                    b.HasOne("AssignFlow.Models.Entities.Class", "Class")
                         .WithMany("Assignments")
                         .HasForeignKey("ClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Subject", "Subject")
+                    b.HasOne("AssignFlow.Models.Entities.Subject", "Subject")
                         .WithMany("Assignments")
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.User", "Teacher")
+                    b.HasOne("AssignFlow.Models.Entities.User", "Teacher")
                         .WithMany("Assignments")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -293,15 +293,15 @@ namespace OnnorokomProjucti.Migrations
                     b.Navigation("Teacher");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.StudentClass", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.StudentClass", b =>
                 {
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Class", "Class")
+                    b.HasOne("AssignFlow.Models.Entities.Class", "Class")
                         .WithMany("StudentClasses")
                         .HasForeignKey("ClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.User", "Student")
+                    b.HasOne("AssignFlow.Models.Entities.User", "Student")
                         .WithMany("StudentClasses")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -312,15 +312,15 @@ namespace OnnorokomProjucti.Migrations
                     b.Navigation("Student");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Submission", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Submission", b =>
                 {
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Assignment", "Assignment")
+                    b.HasOne("AssignFlow.Models.Entities.Assignment", "Assignment")
                         .WithMany("Submissions")
                         .HasForeignKey("AssignmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.User", "Student")
+                    b.HasOne("AssignFlow.Models.Entities.User", "Student")
                         .WithMany("Submissions")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -331,21 +331,21 @@ namespace OnnorokomProjucti.Migrations
                     b.Navigation("Student");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.TeacherSubject", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.TeacherSubject", b =>
                 {
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Class", "Class")
+                    b.HasOne("AssignFlow.Models.Entities.Class", "Class")
                         .WithMany("TeacherSubjects")
                         .HasForeignKey("ClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.Subject", "Subject")
+                    b.HasOne("AssignFlow.Models.Entities.Subject", "Subject")
                         .WithMany("TeacherSubjects")
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnnorokomProjucti.Models.Entities.User", "Teacher")
+                    b.HasOne("AssignFlow.Models.Entities.User", "Teacher")
                         .WithMany("TeacherSubjects")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -358,12 +358,12 @@ namespace OnnorokomProjucti.Migrations
                     b.Navigation("Teacher");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Assignment", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Assignment", b =>
                 {
                     b.Navigation("Submissions");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Class", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Class", b =>
                 {
                     b.Navigation("Assignments");
 
@@ -372,14 +372,14 @@ namespace OnnorokomProjucti.Migrations
                     b.Navigation("TeacherSubjects");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.Subject", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.Subject", b =>
                 {
                     b.Navigation("Assignments");
 
                     b.Navigation("TeacherSubjects");
                 });
 
-            modelBuilder.Entity("OnnorokomProjucti.Models.Entities.User", b =>
+            modelBuilder.Entity("AssignFlow.Models.Entities.User", b =>
                 {
                     b.Navigation("Assignments");
 
