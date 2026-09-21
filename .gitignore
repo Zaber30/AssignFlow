@@ -7,4 +7,8 @@ Frontend/dist/
 
 **/appsettings.Development.json
 **/appsettings.Local.json
-**/appsettings.json    
+**/appsettings.json
+
+# IDE / tooling
+.kilo/
+.idea/    
