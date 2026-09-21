@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using OnnorokomProjucti.Data;
+using AssignFlow.Data;
 
 #nullable disable
 
-namespace OnnorokomProjucti.Migrations
+namespace AssignFlow.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20260805083808_InitialCreate")]

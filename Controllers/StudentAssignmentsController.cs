@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnnorokomProjucti.Data;
-using OnnorokomProjucti.DTO.Assignment;
-using OnnorokomProjucti.Models.Enums;
+using AssignFlow.Data;
+using AssignFlow.DTO.Assignment;
+using AssignFlow.Models.Enums;
 
-namespace OnnorokomProjucti.Controllers
+namespace AssignFlow.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

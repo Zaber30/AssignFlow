@@ -98,7 +98,7 @@ git --version
 ## Clone the Repository
  ```cpp
    git clone YOUR_GITHUB_REPOSITORY_URL
-   cd OnnorokomProjucti
+   cd AssignFlow
  ```
 Resotere packages
 ```cpp
@@ -136,7 +136,7 @@ dotnet ef database update
 ## run the backend
 Navigate to the backend project:
  ```cpp
-cd. Backend/OnnorokomProjucti
+cd. Backend/AssignFlow
 dotnet run
 ```
 The API should start on your configured URL, for example:

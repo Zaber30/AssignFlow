@@ -2,10 +2,10 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/.idea.AssignFlow.iml
-/contentModel.xml
 /projectSettingsUpdater.xml
 /modules.xml
+/contentModel.xml
+/.idea.AssignFlow.iml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Ignored default folder with query files

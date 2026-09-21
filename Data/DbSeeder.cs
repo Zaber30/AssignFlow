@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using OnnorokomProjucti.Models.Entities;
-using OnnorokomProjucti.Models.Enums;
+using AssignFlow.Models.Entities;
+using AssignFlow.Models.Enums;
 
-namespace OnnorokomProjucti.Data;
+namespace AssignFlow.Data;
 
 public static class DbSeeder
 {

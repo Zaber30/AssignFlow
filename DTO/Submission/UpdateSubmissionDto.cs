@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.Submission;
+namespace AssignFlow.DTO.Submission;
 
 public class UpdateSubmissionDto
 {

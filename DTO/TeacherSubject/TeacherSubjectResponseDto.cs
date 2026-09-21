@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.TeacherSubject;
+namespace AssignFlow.DTO.TeacherSubject;
 
 public class TeacherSubjectResponseDto
 {

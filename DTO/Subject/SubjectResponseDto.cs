@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.Subject;
+namespace AssignFlow.DTO.Subject;
 
 public class SubjectResponseDto
 {

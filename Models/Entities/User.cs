@@ -1,5 +1,5 @@
-namespace OnnorokomProjucti.Models.Entities;
-using OnnorokomProjucti.Models.Enums;
+namespace AssignFlow.Models.Entities;
+using AssignFlow.Models.Enums;
 public class User : BaseEntity
 {
     public string FullName { get; set; } = string.Empty;

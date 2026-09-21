@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using OnnorokomProjucti.Configurations;
-using OnnorokomProjucti.Data;
-using OnnorokomProjucti.Helper;
+using AssignFlow.Configurations;
+using AssignFlow.Data;
+using AssignFlow.Helper;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

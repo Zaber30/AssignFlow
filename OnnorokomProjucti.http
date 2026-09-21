@@ -1,6 +1,0 @@
-@OnnorokomProjucti_HostAddress = http://localhost:5106
-
-GET {{OnnorokomProjucti_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

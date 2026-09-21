@@ -1,5 +1,5 @@
-namespace OnnorokomProjucti.Models.Entities;
-using OnnorokomProjucti.Models.Enums;
+namespace AssignFlow.Models.Entities;
+using AssignFlow.Models.Enums;
 public class Submission:BaseEntity
 {
     public Guid AssignmentId { get; set; }

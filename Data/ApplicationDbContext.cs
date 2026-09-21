@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using OnnorokomProjucti.Models;
-using OnnorokomProjucti.Models.Entities;
-namespace OnnorokomProjucti.Data;
+using AssignFlow.Models;
+using AssignFlow.Models.Entities;
+namespace AssignFlow.Data;
 public class ApplicationDbContext:DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)

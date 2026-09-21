@@ -3,10 +3,10 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using OnnorokomProjucti.Configurations;
-using OnnorokomProjucti.Models.Entities;
+using AssignFlow.Configurations;
+using AssignFlow.Models.Entities;
 
-namespace OnnorokomProjucti.Helper;
+namespace AssignFlow.Helper;
 
 public class JwtTokenGenerator
 {

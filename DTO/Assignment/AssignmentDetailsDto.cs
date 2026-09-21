@@ -1,6 +1,6 @@
-using OnnorokomProjucti.Models.Enums;
+using AssignFlow.Models.Enums;
 
-namespace OnnorokomProjucti.DTO.Assignment;
+namespace AssignFlow.DTO.Assignment;
 
 public class AssignmentDetailsDto
 {

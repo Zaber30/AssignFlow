@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.Configurations;
+namespace AssignFlow.Configurations;
 
 public class JwtSettings
 {

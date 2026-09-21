@@ -1,6 +1,6 @@
-using OnnorokomProjucti.Models.Enums;
+using AssignFlow.Models.Enums;
 
-namespace OnnorokomProjucti.DTO.User;
+namespace AssignFlow.DTO.User;
 
 public class UpdateUserDto
 {

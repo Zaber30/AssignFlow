@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.StudentClass;
+namespace AssignFlow.DTO.StudentClass;
 
 public class StudentClassResponseDto
 {

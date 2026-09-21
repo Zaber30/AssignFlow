@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.Class;
+namespace AssignFlow.DTO.Class;
 
 public class CreateClassDto
 {

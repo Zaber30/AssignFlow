@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.Assignment;
+namespace AssignFlow.DTO.Assignment;
 
 public class CreateAssignmentDto
 {

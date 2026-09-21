@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.Models.Enums;
+namespace AssignFlow.Models.Enums;
 
 public enum SubmissionStatus
 {

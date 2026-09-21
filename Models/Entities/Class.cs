@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.Models.Entities;
+namespace AssignFlow.Models.Entities;
 
 public class Class :BaseEntity
 {

@@ -1,5 +1,5 @@
-namespace OnnorokomProjucti.Models.Entities;
-using OnnorokomProjucti.Models.Enums;
+namespace AssignFlow.Models.Entities;
+using AssignFlow.Models.Enums;
 public class Assignment:BaseEntity
 {
     public Guid TeacherId { get; set; }

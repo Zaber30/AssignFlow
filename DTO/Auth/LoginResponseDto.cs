@@ -1,4 +1,4 @@
-namespace OnnorokomProjucti.DTO.Auth;
+namespace AssignFlow.DTO.Auth;
 
 public class LoginResponseDto
 {

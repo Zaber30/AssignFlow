@@ -1,6 +1,6 @@
-using OnnorokomProjucti.Models.Enums;
+using AssignFlow.Models.Enums;
 
-namespace OnnorokomProjucti.DTO.Submission;
+namespace AssignFlow.DTO.Submission;
 
 public class SubmissionDetailsDto
 {
