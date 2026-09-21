@@ -78,6 +78,8 @@ namespace OnnorokomProjucti.Controllers
                 });
             }
 
+            List<string> list = new List<string>();
+
             // Check teacher is assigned to this class & subject
             bool isAssigned = await _context.TeacherSubjects.AnyAsync(x =>
                 x.TeacherId == teacherId &&

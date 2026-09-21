@@ -1,5 +1,5 @@
 Assignment & Submission Management System for a school or college
-A full-stack Assignment Management System built with **ASP.NET Core Web API** and **React + TypeScript**.
+A full-stack Assignment Management System built with **ASP.NET Core Web API**
 
 The system provides role-based access for:
 

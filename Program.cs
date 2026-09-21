@@ -1,7 +1,14 @@
+using System;
+using System.Linq;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using OnnorokomProjucti.Configurations;
 using OnnorokomProjucti.Data;
@@ -17,6 +24,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddScoped<JwtTokenGenerator>();
 builder.Services.AddEndpointsApiExplorer();
+List<int> list = new List<int>();
 // builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(options =>
 {
